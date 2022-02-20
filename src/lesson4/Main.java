@@ -95,7 +95,7 @@ class TicTacToe {
         int x, y;
         for (x = 0; x < 2; x++) {
             for (y = 0; y < 2; y++) {
-                if (table[y][0 + x] == ch && table[y][1 + y] == ch) {
+                if (table[y][x] == ch && table[y][1 + y] == ch) {
                     return true;
                 }
             }
@@ -103,7 +103,7 @@ class TicTacToe {
         //
         for (x = 0; x < 2; x++) {
             for (y = 0; y < 2; y++) {
-                if (table[0 + x][y] == ch && table[1 + x][y] == ch) {
+                if (table[x][y] == ch && table[1 + x][y] == ch) {
                     return true;
                 }
             }
